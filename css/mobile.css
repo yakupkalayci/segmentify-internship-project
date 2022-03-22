@@ -51,11 +51,12 @@
         height: auto;
     }
 
-    .addToBasket {
-        display: block;
-    }
-
     .shipping {
         font-size: 10px;
+    }
+
+    #popup {
+        text-align: center;
+        margin-top: 20px;
     }
 }

@@ -20,7 +20,7 @@ const swiper = new Swiper(".swiper", {
     710: {
       slidesPerView: 3,
     },
-    768: {
+    1400: {
       slidesPerView: 4,
     },
   },
@@ -69,11 +69,20 @@ getData()
               <p>Ücretsiz Kargo</p>
             </div>
           </div>`
-            : undefined
+            : ""
         }
+        <div class="addToBasket">
+        <button>Sepete Ekle</button>
+      </div>
     </div>
 </div>`
   });
+  const addToBasket = document.querySelector(".addToBasket>button");
+  addToBasket.addEventListener("click", () => {
+    var x = document.getElementById("popup");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  })
 })
 .catch((err) => console.error(err));
 
@@ -83,7 +92,7 @@ categories.addEventListener("click", e => {
     let current = document.querySelector(".active");
     current && current.classList.remove("active");
     e.target.classList.add("active");
-  }
+
 
   getData()
   .then(response => {
@@ -135,13 +144,16 @@ categories.addEventListener("click", e => {
                 </div>`
                   : ""
               }
+              <div class="addToBasket">
+              <button>Sepete Ekle</button>
+            </div>
           </div>
     </div>
           `;
     });
   })
   .catch(err => console.error(err));
-})
+}})
 
 function changeTabTitle(selected, categories) {
   const tabDOM = document.querySelector("#header>h1");
