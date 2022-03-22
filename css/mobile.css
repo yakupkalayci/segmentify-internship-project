@@ -22,4 +22,12 @@
         width: auto;
         overflow: auto;
     }
+
+    .product {
+        padding-bottom: 10px;
+    }
+
+    .addToBasket {
+        display: block;
+    }
 }
