@@ -1,4 +1,9 @@
 @media screen and (max-width : 768px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    
     main {
         flex-direction: column;
         width: 90%;
@@ -23,11 +28,34 @@
         overflow: auto;
     }
 
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-button-prev {
+        background-color: transparent;
+    }
+    
+    .swiper-button-next {
+        background-color: transparent;
+    }
+
     .product {
         padding-bottom: 10px;
+        width: 200px;
+    }
+
+    .productImg > img {
+        width: 100%;
+        height: auto;
     }
 
     .addToBasket {
         display: block;
+    }
+
+    .shipping {
+        font-size: 10px;
     }
 }
