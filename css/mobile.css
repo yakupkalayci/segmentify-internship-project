@@ -1,0 +1,25 @@
+@media screen and (max-width : 768px) {
+    main {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    #header > h1 {
+        font-size: 22px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #main {
+        flex-direction: column;
+    }
+
+    #categories {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: auto;
+        overflow: auto;
+    }
+}
